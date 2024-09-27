@@ -1,0 +1,176 @@
+@font-face {
+    font-family: Nunito;
+    src: url(../font/Nunito-Regular.ttf);
+    src: url(../font/Nunito-Regular.ttf) format('ttf'), url(../font/Nunito-Regular.ttf) format('truetype');
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+    font-family: Nunito;
+}
+
+body {
+    min-height: 100%;
+    background: url('https://cdn.donmai.us/original/42/5c/__megumin_kono_subarashii_sekai_ni_shukufuku_wo_drawn_by_zarory__425c939e421ad0b585b5f680ea702936.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-color: rgba(255, 0, 0, 0.8); /* Fondo rojo con transparencia */
+    color: #FFFFFF;
+}
+
+a:focus {
+    outline: 0;
+}
+
+#wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+#wrapper #content-wrapper {
+    background-color: #0B1622;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+#wrapper #content-wrapper #content {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+}
+
+.container,
+.container-fluid,
+.container-login {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.scroll-to-top {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    display: none;
+    width: 2.75rem;
+    height: 2.75rem;
+    text-align: center;
+    color: #fff;
+    background: rgba(90, 92, 105, 0.5);
+    line-height: 46px;
+    transition: all 0.3s ease-in-out;
+}
+
+.scroll-to-top:focus,
+.scroll-to-top:hover {
+    color: #fff;
+    background: #5a5c69;
+}
+
+.scroll-to-top i {
+    font-weight: 800;
+}
+
+@-webkit-keyframes growIn {
+    0% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes growIn {
+    0% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.animated--grow-in,
+.sidebar .nav-item .collapse {
+    -webkit-animation-name: growIn;
+    animation-name: growIn;
+    -webkit-animation-duration: 0.2s;
+    animation-duration: 0.2s;
+    -webkit-animation-timing-function: transform cubic-bezier(0.18, 1.25, 0.4, 1), opacity cubic-bezier(0, 1, 0.4, 1);
+    animation-timing-function: transform cubic-bezier(0.18, 1.25, 0.4, 1), opacity cubic-bezier(0, 1, 0.4, 1);
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.animated--fade-in {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: 0.2s;
+    animation-duration: 0.2s;
+    -webkit-animation-timing-function: opacity cubic-bezier(0, 1, 0.4, 1);
+    animation-timing-function: opacity cubic-bezier(0, 1, 0.4, 1);
+}
+
+.bg-gradient-primary {
+    background-color: #6777ef;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #6777ef), to(#303f9f));
+    background-image: linear-gradient(180deg, #6777ef 10%, #303f9f 100%);
+    background-size: cover;
+}
+
+.bg-gradient-secondary {
+    background-color: #757575;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #757575), to(#60616f));
+    background-image: linear-gradient(180deg, #757575 10%, #60616f 100%);
+    background-size: cover;
+}
+
+.bg-gradient-success {
+    background-color: #66bb6a;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #66bb6a), to(#13855c));
+    background-image: linear-gradient(180deg, #66bb6a 10%, #13855c 100%);
+    background-size: cover;
+}
+
+/* Otros estilos de gradiente que usas también se pueden incluir si es necesario */
+
+.o-hidden {
+    overflow: hidden !important;
+}
+
+.text-xs {
+    font-size: 0.7rem;
+}
+
+.text-lg {
+    font-size: 1.2rem;
+}
+
+.text-gray-100 {
+    color: #f8f9fc !important;
+}
+
+/* Agrega más estilos según necesites */
