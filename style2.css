@@ -1,17 +1,17 @@
 body.dark-mode {
     --bg-opacity: 1;
-    background-color: #181818;
-    background-color: rgba(24, 24, 24, var(--bg-opacity));
-    color: #e0e0e0;
+    background-color: #1a202c;
+    background-color: rgba(26, 32, 44, var(--bg-opacity));
+    color: #d3d5f3;
 }
 
 .card-body {
-    background-color: #2c3e50;
-    color: #ecf0f1;
+    background-color: #0d1b2a;
+    color: #e0e0e0;
 }
 
 .sticky-footer {
-    background-color: #34495e;
+    background-color: #152232;
     color: #fff;
 }
 
@@ -19,17 +19,127 @@ body.dark-mode {
     color: #e67e22;
 }
 
+h1 {
+    text-align: center;
+    color: #e67e22;
+}
+
+.text-container {
+    display: inline-flex;
+    align-items: center;
+}
+
+.fire-text {
+    font-size: 2.5em;
+    color: #e67e22;
+    text-shadow: 0 0 10px #e67e22, 0 0 20px #e67e22, 0 0 30px #e67e22;
+    animation: burn 0.5s infinite alternate;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+@keyframes burn {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+
+.fire-emoji {
+    font-size: 0.9em;
+    color: #ff5733;
+}
+
 .button-style {
-    background-color: #3498db;
+    background-color: rgba(0, 0, 128, 0.0);
     color: #fff;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
-    outline: none;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    outline: none !important;
+    border: 0;
 }
 
-.button-style:hover {
-    background-color: #2980b9;
-    transform: scale(1.1);
+.button-style:active {
+    outline: none !important;
+    border: 0;
+}
+
+.age-restriction-icon {
+    background-color: transparent;
+    color: white;
+    padding: 5px 0px;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: left;
+    white-space: nowrap;
+    margin-right: 5px;
+}
+
+.scroll-mouse-enter {
+    max-height: 400px;
+    overflow-y: hidden;
+}
+
+.medium-scroll {
+    max-height: 300px;
+}
+
+.scroll-visible {
+    overflow-y: scroll;
+}
+
+.scroll-mouse-enter::-webkit-scrollbar {
+    width: 5px;
+}
+
+.scroll-mouse-enter::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.scroll-mouse-enter::-webkit-scrollbar-thumb {
+    background: #b9b8b837;
+    border-radius: 6px;
+}
+
+.scroll-mouse-enter::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+@media (max-width: 1024px) {
+    .scroll-mouse-enter {
+        overflow-y: scroll;
+    }
+}
+
+@media (max-width: 768px) {
+    .age-restriction-icon {
+        padding: 5px 0;
+        margin-left: 10px;
+    }
+}
+
+#info-box {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    background-color: transparent;
+    padding: 10px;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+}
+
+#corner-image {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+#powered-text {
+    font-size: 50%;
+    color: #999;
 }
