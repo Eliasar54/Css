@@ -1,0 +1,35 @@
+body.dark-mode {
+    --bg-opacity: 1;
+    background-color: #181818;
+    background-color: rgba(24, 24, 24, var(--bg-opacity));
+    color: #e0e0e0;
+}
+
+.card-body {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+}
+
+.sticky-footer {
+    background-color: #34495e;
+    color: #fff;
+}
+
+.sticky-footer a {
+    color: #e67e22;
+}
+
+.button-style {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button-style:hover {
+    background-color: #2980b9;
+    transform: scale(1.1);
+}
