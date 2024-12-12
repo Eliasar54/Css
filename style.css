@@ -40,6 +40,11 @@ body {
   color: #444444;
   background-color: #dedede;
 }
+.navbar .icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
 .navbar .icons i {
   color: #3ddc97;
   font-size: 25px;
@@ -53,6 +58,7 @@ body {
 }
 .notification {
   position: relative;
+  font-size: 25px;
 }
 .notification-badge {
   position: absolute;
@@ -82,7 +88,7 @@ body {
 }
 .menu {
   position: relative;
-  font-size: 30px;
+  font-size: 25px;
   cursor: pointer;
 }
 .menu-content {
